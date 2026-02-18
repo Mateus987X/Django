@@ -1,5 +1,5 @@
 """
-WSGI config for fusion project.
+WSGI config for djangoum1 project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -10,8 +10,7 @@ https://docs.djangoproject.com/en/5.2/howto/deployment/wsgi/
 import os
 
 from django.core.wsgi import get_wsgi_application
-from dj_static import Cling, MediaCling
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "fusion.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "djangoum1.settings")
 
-application = Cling(MediaCling(get_wsgi_application()))
+application = get_wsgi_application()
